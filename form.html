@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>    
+        <a href=""><img src="img/Logo.png" width="130px" alt="logo"></a>
+        <nav>
+            <a href="index.html"><div class="divNav">Home</div></a>
+            <a href="curriculum.html    "><div class="divNav">Hoja de vida</div></a>
+            <a href="#"><div class="divNav">Servicios</div></a>
+            <a href="form.html"><div class="divNav">Contactame</div></a>
+        </nav>
+    </header>
+    
+    <h1>Contacto</h1>
+    <p style="text-align:center;font-size: 21px;">Daremos un importante paso en tu empresa y estarás mas cerca de cumplir tus metas.</p>
+
+    <form>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="inputForm" id="nombreForm" name="nombre" placeholder="Ingresa tu nombre" required>
+        
+        <label for="lastName">Apellidos:</label>
+        <input type="text" class="inputForm" id="apellidoForm" name="lastName" placeholder="Ingresa tu apellido" required>
+        
+        <label for="correo">Correo Electronico:</label>
+        <input type="email" class="inputForm" id="correoForm" name="correo" placeholder="Ingresa tu e-mail" required>
+        
+        <label for="telefono">Telefono Celular:</label>
+        <input type="tel" class="inputForm" id="telefonoForm" name="telefono" maxlength="10" pattern="[0-9]*" placeholder="Numero telefónico" required>
+        
+        <label for="selectPosition">Selecciona tu posición actual:</label>
+        <select name="selectPosition" class="inputForm" id="selectForm1" style="width:97% ;" required >
+            <option value="" selected="selected" disabled>Seleccione</option>
+            <option value="emprendeNuevo">Tengo / tendré un nuevo emprendimiento</option>
+            <option value="emprendeViejo">Mi emprendimiento tiene más de un año</option>
+            <option value="independiente">Soy profesional independiente</option>
+            <option value="empleado">La empresa donde trabajo requiere un servicio</option>
+        </select> 
+        
+        <label for="empresa">Empresa donde trabaja (si aplica):</label>
+        <input id="empresaForm" name="empresa" type="text" placeholder="¿Donde trabajas?" style="margin-bottom:3px">
+        <p id="innerP1" align="center" style="color:#fadd02;font-size:16px;"></p>
+        
+        <div id="divCheck"> 
+            <input type="checkbox" name="checkDatos" required>
+            <label style="font-size:16px; margin-left: 0;" for="checkDatos">Autorizo el tratamiento de mis datos según lo estipulado por la ley</label>
+        </div>
+       
+        <input type="submit" id="sendButton" value="Enviar Formulario"> 
+        
+
+    </form>
+
+    <footer>
+        <a href="#">  <img src="img/whatsapp.png" style="padding:5px  20px;" width="26px" alt="whatsapp">  </a>
+        <a href="#">  <img src="img/facebook.png" style="padding:5px  20px;" width="26px" alt="facebook">  </a>    
+        <a href="#">  <img src="img/linkedin.png" style="padding:5px  20px;" width="26px" alt="linkedin">  </a>
+        <div>Bogotá D.C • 2023 • Todos los derechos reservados</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
